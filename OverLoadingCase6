@@ -1,0 +1,20 @@
+package javahome;
+
+public class OverLoadingCase6 {
+
+	void display(int no)
+	{
+		System.out.println("Int Method Invoked");
+	}
+	void display(int ...a)
+	{
+		System.out.println("Varags Method Invoked");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      OverLoadingCase6 obj=new OverLoadingCase6();
+      obj.display(3);
+      obj.display(2,3);
+	}
+
+}
