@@ -1,0 +1,22 @@
+package javahome;
+  //automatic type conversion
+public class OverLoadingCase1 {
+	void  type(int no)
+	{
+		System.out.println("Int Method Invoked");
+	}
+	void type(float no)
+	{
+		System.out.println("Float Method Invoked");
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		OverLoadingCase1 obj=new OverLoadingCase1();
+		obj.type(10);
+		obj.type(23.4f);
+		obj.type('a');
+
+	}
+
+}
