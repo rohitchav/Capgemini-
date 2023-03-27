@@ -1,0 +1,23 @@
+package javahome;
+
+public class OverLoadingCase5 {
+	    void type(String b)
+	    {
+	    	System.out.println("String Method Invoked");
+	    }
+	    void type(StringBuffer sb)
+	    {
+	    	System.out.println("StringBuffer Method Invoked");
+	    }
+	    
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		OverLoadingCase5 obj=new OverLoadingCase5();
+		obj.type("abc");
+		obj.type(new StringBuffer("Java"));
+		obj.type(null);
+		
+		
+	}
+
+}
