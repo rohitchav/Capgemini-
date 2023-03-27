@@ -1,0 +1,21 @@
+package javahome;
+
+public class OverLoadingCase2 {
+	void type(float a,int b)
+	{
+		System.out.println("Float-Int Method");
+	}
+	void type(int a,float b)
+	{
+		System.out.println("Int-Float Method");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        OverLoadingCase2 obj=new OverLoadingCase2();
+        obj.type(10, 23.4f);
+        obj.type(12.4f, 10);
+        obj.type(10, 20);//It Will Create Confusion State For Compiler...Hence Ambiguity Occurr
+	}
+
+}
