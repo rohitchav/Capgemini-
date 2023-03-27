@@ -1,0 +1,32 @@
+package javahome;
+
+public class Assignment_1 {
+	int no1,no2,no3;
+	public static void main(String[] args) {
+	Assignment_1 t=new Assignment_1();
+	t.no1=30;
+	t.no2=40;
+	t.no3=20;
+	t.maxNumber();
+	}
+void maxNumber()
+{
+	if(no1>no2 && no1>no3)
+	{
+		System.out.println("Number One Is Greater Than The Other Two Numbers");
+	}
+	else if(no2>no1 && no2>no3)
+	{
+		System.out.println("Number Two Is Greater Than The Other Two Numbers ");
+	}
+	else if(no3>no1 && no3>no2)
+	{
+		System.out.println("Number Three Is Greater Than The Other Two Numbers");
+	}
+	else
+	{
+		System.out.println("All The Numbers Are Equal");
+	}
+}
+ 
+}
