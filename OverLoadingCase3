@@ -1,0 +1,31 @@
+package javahome;
+class Animal
+{
+	
+}
+class Dog extends Animal
+{
+	
+}
+public class OverLoadingCase3 {
+    public void type(Animal a)
+    {
+    	System.out.println("Animal Object Invoked");
+    }
+    public void type(Dog d)
+    {
+    	System.out.println("Dog Object Invoked");
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	      OverLoadingCase3 obj=new OverLoadingCase3();
+          Animal b=new Animal(); //Animal Refrence Holds Animal Object
+          obj.type(b);
+          Dog g=new Dog(); //Dog Refrence Holds Dog Object
+          obj.type(g);
+          Animal e=new Dog(); //Animal Refrence Holds Child Object
+          obj.type(e); //Refrence Type will preffred by compiler
+          //Note:-In Method OverLoading Compiler Will Give The Priority To Refrence Variable ,It Never Prior to runtime object
+	}
+
+}
