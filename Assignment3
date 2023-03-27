@@ -1,0 +1,25 @@
+package javahome;
+
+public class Assignment_3 {
+	double paybleamount,simpleinterest,principleamount,rate,time;;
+	public static void main(String[] args)
+	{
+		Assignment_3 t=new Assignment_3();
+		t.principleamount=10000;
+		t.rate=8.44;
+		t.time=3.00;
+		t.simpleInterest();
+		t.amountPayble();
+	}
+	   void simpleInterest()
+	   {
+		   simpleinterest=(principleamount*rate*time)/100;
+		   System.out.println("Simple Interest="+simpleinterest);
+	   }
+	   void amountPayble()
+	   {
+		   paybleamount=principleamount+simpleinterest;
+		   System.out.println("Total Payable Amount="+paybleamount);
+	   }
+
+}
