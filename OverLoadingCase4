@@ -1,0 +1,20 @@
+package javahome;
+
+public class OverLoadingCase4 {
+    void type(Object o)
+    {
+    	System.out.println("Object Method Invoked");
+    }
+    void type(String b)
+    {
+    	System.out.println("String Method Invoked");
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		OverLoadingCase4 obj=new OverLoadingCase4();
+		obj.type(new Object());
+		obj.type("abc");
+	
+	}
+
+}
